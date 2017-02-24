@@ -53,7 +53,6 @@ def naked_twins(values):
                     digit1 = value[0]
                     digit2 = value[1]
                     for item in set(unit).difference({square, peer}):
-                        # If the item is not in the naked twins pair, remove the naked twins' values
                         # Eliminate the naked twins as possibilities for their peers
                         if digit1 in values[item]:
                             assign_value(values, item, values[item].replace(digit1, ""))
